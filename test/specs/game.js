@@ -85,6 +85,7 @@ describe('Create a game', () => {
             Sel.waiter(browserA,Sel.yourStepText)
             Sel.XOExist(browserA, browserA.$$('.tablecell')[40].$('span*=o'))
         expect(Sel.Cell41.browserA.waitForDisplayed()).toBe(true)
+        // browser.debug()
         Sel.Cell45.browserA.click()
             Sel.waiter(browserB,Sel.Cell45)
             Sel.waiter(browserB,Sel.yourStepText)
