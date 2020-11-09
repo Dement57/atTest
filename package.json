@@ -1,0 +1,27 @@
+{
+  "name": "tests_x_o",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/webdriverio": "^5.0.0",
+    "@wdio/allure-reporter": "^6.7.2",
+    "@wdio/cli": "^6.7.2",
+    "@wdio/local-runner": "^6.7.2",
+    "@wdio/mocha-framework": "^6.7.0",
+    "@wdio/spec-reporter": "^6.7.0",
+    "@wdio/sync": "^6.7.2",
+    "chromedriver": "^86.0.0",
+    "wdio-chromedriver-service": "^6.0.4",
+    "wdio-video-reporter": "^3.1.1",
+    "webdriverio": "^6.7.2"
+  },
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}
