@@ -1,0 +1,1643 @@
+{
+	"info":  {
+		"_postman_id": "73f61194-778b-4cfa-91e4-94e5509d1659",
+		"name": "X-RAY",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API",
+			"item": [
+				{
+					"name": "AUTH AND REG",
+					"item": [
+						{
+							"name": "SIGN IN",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/users/sign_in",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"users",
+										"sign_in"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "SIGN IN",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "authenticity_token",
+											"value": "GF91rNyH2nxoDh8QM+93bqJeMhtlfpswJOWgQXo7omskY9TSReJ3RN2pTyGdtdOULve4GnDqVJBU3WvywueNAQ==",
+											"type": "text"
+										},
+										{
+											"key": "user[email]",
+											"value": "qwe12123@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "user[password]",
+											"value": "qwe123",
+											"type": "text"
+										},
+										{
+											"key": "user[remember_me]",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "commit",
+											"value": "Войти",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/users/sign_in",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"users",
+										"sign_in"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "SIGN UP",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/users/sign_up",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"users",
+										"sign_up"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "REGISTRATION USER",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "00bc13c4-7bb2-4126-a2bd-c02797d5815d",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "545868d3-42f6-417d-8ec4-58822eebd8da",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded",
+										"disabled": true
+									},
+									{
+										"key": "Cookie",
+										"type": "text",
+										"value": "{{cookie2}}"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "authenticity_token",
+											"value": "GF91rNyH2nxoDh8QM+93bqJeMhtlfpswJOWgQXo7omskY9TSReJ3RN2pTyGdtdOULve4GnDqVJBU3WvywueNAQ==",
+											"type": "text"
+										},
+										{
+											"key": "user[email]",
+											"value": "user1pm@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "user[password]",
+											"value": "Qwe12345",
+											"type": "text"
+										},
+										{
+											"key": "user[password_confirmation]",
+											"value": "Qwe12345",
+											"type": "text"
+										},
+										{
+											"key": "commit",
+											"value": "Зарегистрироваться",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://xoxotsf.herokuapp.com/users",
+									"protocol": "https",
+									"host": [
+										"xoxotsf",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "GAME",
+					"item": [
+						{
+							"name": "CREATE GAME",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "851b1e0b-2acf-4024-a5e3-69efc2f5b17d",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "9675ddb5-36e7-4cd2-9c7d-d9db26b96df6",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-CSRF-Token",
+										"type": "text",
+										"value": "GF91rNyH2nxoDh8QM+93bqJeMhtlfpswJOWgQXo7omskY9TSReJ3RN2pTyGdtdOULve4GnDqVJBU3WvywueNAQ=="
+									},
+									{
+										"key": "Cookie",
+										"type": "text",
+										"value": "_nerve_ai_session=IT5ANTxbYEowxkMLK4vhra6o%2FioTynG7%2FabJPRfoI71cTx7OHIMur9XTszqozT8K5P%2BNrbWgPfYNi7Z8hdOBL3kEVzJSay%2Bp8Kj8aWrsrbdayjCcyqFqHfE81rTZACA7d%2Bu3r1%2BK5xNe8C9Dzr5m6S%2FAryEEAA7EGuEC1xTIkB509vksFF%2BpN5kKWE9zce%2F4grlfVjMqo5w%2B9hWq7C6Lt3mVwZKxcI%2F683VrsKxNzqRHy0RZ2rA5z2GzOwtF%2B%2BIHxUUuziuVmOT9GvHPL6azE%2F2KURcvRqyVy9qI2%2FXV0qfBOgbiwIKF35xJN%2BQEcXwW07X0jgYdm7YqixTMrUxq8ydKxao1D%2Fsd8PujDcK0kF22oomNn040NiniHmNzCVLTboPm5gfIKB5aOUpbTXNkkHtqV%2FZHWzJxi4zZruJtFaRX7HneVmuDxhn4NvfduPmpuCqfeUF8LvMrCyUkaO1zNf7%2FQ2qgftdzHXd1tYc7jgZ3beq%2BoXGjnkveLeLVxpCpdZK7o8hzKn3jkZQy4TvHDpHODTg1NTJOxFrMGD6DQRb2--Z4QVSHv91qPQWVJS--HbAfbOgCRYMx64%2BgxDqMXA%3D%3D; path=/; HttpOnly"
+									},
+									{
+										"key": "withCredentials",
+										"type": "text",
+										"value": "true",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{host}}/games",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"games"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CURRENT GAME",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "4ed8fbdc-0875-4859-82be-94e021bda661",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "a61648d0-9310-4c6f-bcee-76a4fc545145",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-CSRF-Token",
+										"type": "text",
+										"value": "GF91rNyH2nxoDh8QM+93bqJeMhtlfpswJOWgQXo7omskY9TSReJ3RN2pTyGdtdOULve4GnDqVJBU3WvywueNAQ=="
+									},
+									{
+										"key": "Cookie",
+										"type": "text",
+										"value": "_nerve_ai_session=IT5ANTxbYEowxkMLK4vhra6o%2FioTynG7%2FabJPRfoI71cTx7OHIMur9XTszqozT8K5P%2BNrbWgPfYNi7Z8hdOBL3kEVzJSay%2Bp8Kj8aWrsrbdayjCcyqFqHfE81rTZACA7d%2Bu3r1%2BK5xNe8C9Dzr5m6S%2FAryEEAA7EGuEC1xTIkB509vksFF%2BpN5kKWE9zce%2F4grlfVjMqo5w%2B9hWq7C6Lt3mVwZKxcI%2F683VrsKxNzqRHy0RZ2rA5z2GzOwtF%2B%2BIHxUUuziuVmOT9GvHPL6azE%2F2KURcvRqyVy9qI2%2FXV0qfBOgbiwIKF35xJN%2BQEcXwW07X0jgYdm7YqixTMrUxq8ydKxao1D%2Fsd8PujDcK0kF22oomNn040NiniHmNzCVLTboPm5gfIKB5aOUpbTXNkkHtqV%2FZHWzJxi4zZruJtFaRX7HneVmuDxhn4NvfduPmpuCqfeUF8LvMrCyUkaO1zNf7%2FQ2qgftdzHXd1tYc7jgZ3beq%2BoXGjnkveLeLVxpCpdZK7o8hzKn3jkZQy4TvHDpHODTg1NTJOxFrMGD6DQRb2--Z4QVSHv91qPQWVJS--HbAfbOgCRYMx64%2BgxDqMXA%3D%3D; path=/; HttpOnly"
+									},
+									{
+										"key": "withCredentials",
+										"type": "text",
+										"value": "true",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{host}}/games/282",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"games",
+										"282"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CURRENT USER",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "c84ba623-a0b0-4464-92d7-eb6d350c5b49",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "989b1cdc-5af7-4ae4-a077-b236ad79a4c1",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-CSRF-Token",
+										"type": "text",
+										"value": "GF91rNyH2nxoDh8QM+93bqJeMhtlfpswJOWgQXo7omskY9TSReJ3RN2pTyGdtdOULve4GnDqVJBU3WvywueNAQ=="
+									},
+									{
+										"key": "Cookie",
+										"type": "text",
+										"value": "_nerve_ai_session=IT5ANTxbYEowxkMLK4vhra6o%2FioTynG7%2FabJPRfoI71cTx7OHIMur9XTszqozT8K5P%2BNrbWgPfYNi7Z8hdOBL3kEVzJSay%2Bp8Kj8aWrsrbdayjCcyqFqHfE81rTZACA7d%2Bu3r1%2BK5xNe8C9Dzr5m6S%2FAryEEAA7EGuEC1xTIkB509vksFF%2BpN5kKWE9zce%2F4grlfVjMqo5w%2B9hWq7C6Lt3mVwZKxcI%2F683VrsKxNzqRHy0RZ2rA5z2GzOwtF%2B%2BIHxUUuziuVmOT9GvHPL6azE%2F2KURcvRqyVy9qI2%2FXV0qfBOgbiwIKF35xJN%2BQEcXwW07X0jgYdm7YqixTMrUxq8ydKxao1D%2Fsd8PujDcK0kF22oomNn040NiniHmNzCVLTboPm5gfIKB5aOUpbTXNkkHtqV%2FZHWzJxi4zZruJtFaRX7HneVmuDxhn4NvfduPmpuCqfeUF8LvMrCyUkaO1zNf7%2FQ2qgftdzHXd1tYc7jgZ3beq%2BoXGjnkveLeLVxpCpdZK7o8hzKn3jkZQy4TvHDpHODTg1NTJOxFrMGD6DQRb2--Z4QVSHv91qPQWVJS--HbAfbOgCRYMx64%2BgxDqMXA%3D%3D; path=/; HttpOnly"
+									},
+									{
+										"key": "withCredentials",
+										"type": "text",
+										"value": "true",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{host}}/users/current",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"users",
+										"current"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "MAKE STEP",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "057e1e59-bea3-4680-bf8f-65985a32c7d7",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "5337ccc8-592c-40ac-a2fe-035f2e39fce1",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-CSRF-Token",
+										"type": "text",
+										"value": "{{token1}}"
+									},
+									{
+										"key": "Cookie",
+										"type": "text",
+										"value": "{{cookie1}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cell\": {\r\n        \"id\": 28101,\r\n        \"game_id\": 282,\r\n        \"x\": 7,\r\n        \"y\": 4,\r\n        \"kind\": null,\r\n        \"created_at\": \"2020-11-09T11:42:35.809Z\",\r\n        \"updated_at\":\"2020-11-09T11:42:35.809Z\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/games/282/make_step",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"games",
+										"282",
+										"make_step"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Tests",
+			"item": [
+				{
+					"name": "SIGN_IN USER2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "96060dd8-69ed-4e17-b1d5-e0ab11331a90",
+								"exec": [
+									"let html = cheerio(responseBody);\r",
+									"let token = html.find('[name = \"csrf-token\"]')[0].attribs.content;\r",
+									"pm.collectionVariables.set('token2', token)\r",
+									"console.log(token);\r",
+									"\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}",
+							"host": [
+								"{{host}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SIGN_IN USER2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "042ca289-6148-4d20-a03b-e5fe971efc2f",
+								"exec": [
+									"let html = cheerio(responseBody);\r",
+									"let token = html.find('[name = \"csrf-token\"]')[0].attribs.content;\r",
+									"pm.collectionVariables.set('token2', token)\r",
+									"console.log(token);\r",
+									"\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"const headers = JSON.parse(JSON.stringify(pm.response.headers))\r",
+									"\r",
+									"headers.forEach(elem => {\r",
+									"    if (elem.key === 'Set-Cookie'){\r",
+									"        pm.collectionVariables.set('cookie2',elem.value)\r",
+									"        console.log(elem.value)\r",
+									"    }\r",
+									"})\r",
+									"\r",
+									"console.log(headers, typeof headers)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "authenticity_token",
+									"value": "{{token2}}",
+									"type": "text"
+								},
+								{
+									"key": "user[email]",
+									"value": "qwe12123@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "user[password]",
+									"value": "qwe123",
+									"type": "text"
+								},
+								{
+									"key": "user[remember_me]",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "commit",
+									"value": "Войти",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/users/sign_in",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"users",
+								"sign_in"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "REGISTRATION USER1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f10f3dec-4072-4432-b1db-71bdd781498f",
+								"exec": [
+									"let html = cheerio(responseBody);\r",
+									"let token = html.find('[name = \"csrf-token\"]')[0].attribs.content;\r",
+									"pm.collectionVariables.set('token1', token)\r",
+									"\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"const headers = JSON.parse(JSON.stringify(pm.response.headers))\r",
+									"\r",
+									"headers.forEach(elem => {\r",
+									"    if (elem.key === 'Set-Cookie'){\r",
+									"        pm.collectionVariables.set('cookie1',elem.value)\r",
+									"        console.log(elem.value)\r",
+									"    }\r",
+									"})\r",
+									"\r",
+									"console.log(headers, typeof headers)\r",
+									"\r",
+									"// console.log(token);\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "71b041be-7332-44d6-bdd1-ecaf18154468",
+								"exec": [
+									"const moment = require('moment')\r",
+									"pm.collectionVariables.set('user1',`test_user1${moment().unix()}@gmail.com`);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "{{cookie2}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "authenticity_token",
+									"value": "{{token1}}",
+									"type": "text"
+								},
+								{
+									"key": "user[email]",
+									"value": "user1pm@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "user[password]",
+									"value": "Qwe12345",
+									"type": "text"
+								},
+								{
+									"key": "user[password_confirmation]",
+									"value": "Qwe12345",
+									"type": "text"
+								},
+								{
+									"key": "commit",
+									"value": "Зарегистрироваться",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://xoxotsf.herokuapp.com/users",
+							"protocol": "https",
+							"host": [
+								"xoxotsf",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GAME USER1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "49d81758-2033-4430-b0c9-fcfe5d953c48",
+								"exec": [
+									"const jsonData = JSON.parse(responseBody)\r",
+									"// const respHeaders = JSON.stringify(pm.response.headers)\r",
+									"// const Cookies = require('postman-collection').Cookie;\r",
+									"\r",
+									"pm.test(\"Response code is 200\", function () {\r",
+									"    pm.expect(pm.response.code).to.eql(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"GAME LOADED\", function () {\r",
+									"    pm.expect(jsonData.id).to.eql(pm.collectionVariables.get('gameNumber'));\r",
+									"});\r",
+									"\r",
+									"pm.collectionVariables.set('cell', jsonData.cells[0][0].id);\r",
+									"console.log(pm.collectionVariables.get('cell'));\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "b96691eb-eddf-4df2-ab6b-7c6476f02227",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-CSRF-Token",
+								"type": "text",
+								"value": "{{token1}}"
+							},
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "{{cookie1}}"
+							},
+							{
+								"key": "withCredentials",
+								"type": "text",
+								"value": "true",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{host}}/games/{{gameNumber}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"games",
+								"{{gameNumber}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GAME USER2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "98b6487f-8920-4d3d-88be-6c77e9623dc6",
+								"exec": [
+									"const jsonData = JSON.parse(responseBody)\r",
+									"\r",
+									"pm.test(\"Response code is 200\", function () {\r",
+									"    pm.expect(pm.response.code).to.eql(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"GAME LOADED\", function () {\r",
+									"    pm.expect(jsonData.id).to.eql(pm.collectionVariables.get('gameNumber'));\r",
+									"});\r",
+									"\r",
+									"\r",
+									"// const resp = JSON.parse(responseBody)\r",
+									"// const respHeaders = JSON.stringify(pm.response.headers)\r",
+									"// const Cookies = require('postman-collection').Cookie;\r",
+									"// pm.collectionVariables.set('cookie1', Cookies)\r",
+									"// rawHeader = response.headers.get('Set-Cookie')\r",
+									"// const respHeaders = Object.fromEntries(pm.response.headers)\r",
+									"// const newCookie = \r",
+									"// console.log(resp.winner)\r",
+									"// console.log('HEADERRRRRRRRRR______' + \r",
+									"// // JSON.stringify(JSON.parse(pm.response.headers)), \r",
+									"// // JSON.parse(pm.response.headers),\r",
+									"// respHeaders\r",
+									"// )\r",
+									"// // pm.collectionVariables.set('cookie1', response.header['Set-Cookie'])\r",
+									"// pm.test(\"Response code is 200\", function () {\r",
+									"//     // console.log('STATUS IS______ ' + pm.response.code)\r",
+									"//     pm.expect(pm.response.code).to.eql(200);\r",
+									"// });\r",
+									"\r",
+									"// const makeStepUrl = function () { return pm.collectionVariables.get('host') + '/games/' + pm.collectionVariables.get('gameNumber') + '/make_step'; }\r",
+									"\r",
+									"// // console.log(makeStepUrl())\r",
+									"\r",
+									"// const makeStepRequest = {\r",
+									"//     url: makeStepUrl(),\r",
+									"//     method: 'POST',\r",
+									"//     header: { \r",
+									"//         'X-CSRF-Token': pm.collectionVariables.get('token1'),\r",
+									"//         'Cookie': pm.collectionVariables.get('cookie1')\r",
+									"//      },\r",
+									"//      body: {\r",
+									"//         mode: 'raw',\r",
+									"//         raw: \r",
+									"//             {\r",
+									"//     \"cell\": {\r",
+									"//         \"id\": 13740,\r",
+									"//         // \"game_id\": pm.collectionVariables.get('gameNumber')\r",
+									"//         }\r",
+									"//     }\r",
+									"// }}\r",
+									"\r",
+									"// const makeStep = () => {\r",
+									"//     pm.test(\"GAME CHECKING\", function () {\r",
+									"//         pm.sendRequest(makeStepRequest, function (err, resp) {\r",
+									"//             console.log(resp.body)\r",
+									"//             // pm.expect(jsonData.id).to.eql('97');\r",
+									"//             pm.expect(resp).to.have.property('code', 200);\r",
+									"//             // pm.expect(resp).to.have.property('status', 'OK');\r",
+									"//             console.log('RESPONSE^____________' + resp)\r",
+									"//         })\r",
+									"//     })\r",
+									"// }\r",
+									"\r",
+									"\r",
+									"// if (resp.winner === null) {\r",
+									"//     makeStep()\r",
+									"// }"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "24aa5670-a930-4578-8381-44531ad91a0e",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-CSRF-Token",
+								"type": "text",
+								"value": "{{token2}}"
+							},
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "{{cookie2}}"
+							},
+							{
+								"key": "withCredentials",
+								"type": "text",
+								"value": "true",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{host}}/games/{{gameNumber}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"games",
+								"{{gameNumber}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MAKE STEP 1 USER1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "85cd3f9a-da9c-4b80-b34d-a19682742d92",
+								"exec": [
+									"// const jsonData = JSON.parse(responseBody)\r",
+									"\r",
+									"pm.test(\"Response is 204\", function () {\r",
+									"    console.log('STATUS IS______ ' + pm.response.code)\r",
+									"    pm.expect(pm.response.code).to.eql(204);\r",
+									"});\r",
+									"\r",
+									"// const reqBody = {\r",
+									"//     \"cell\": {\r",
+									"//         // \"id\": pm.collectionVariables.get(cellMod1),\r",
+									"//         \"id\": 14435,\r",
+									"//         \"game_id\": pm.collectionVariables.get('gameNumber')\r",
+									"\r",
+									"//     }\r",
+									"// }\r",
+									"\r",
+									"\r",
+									"\r",
+									"// const gameUrl = function () { return pm.collectionVariables.get('host') + '/games/' + pm.collectionVariables.get('gameNumber') + '/make_step'; }\r",
+									"\r",
+									"// console.log(gameUrl())\r",
+									"\r",
+									"// const gameRequest = {\r",
+									"//     url: gameUrl(),\r",
+									"//     method: 'POST',\r",
+									"//     header: { \r",
+									"//         'X-CSRF-Token': pm.collectionVariables.get('token1'),\r",
+									"//      },\r",
+									"//      body: reqBody\r",
+									"// }\r",
+									"\r",
+									"// const gameChecking = () => {\r",
+									"//     pm.test(\"GAME CHECKING\", function () {\r",
+									"//         pm.sendRequest(gameRequest, function (err, resp) {\r",
+									"//             console.log(resp.body)\r",
+									"//             // pm.expect(jsonData.id).to.eql('97');\r",
+									"//             pm.expect(resp).to.have.property('code', 200);\r",
+									"//             // pm.expect(resp).to.have.property('status', 'OK');\r",
+									"//             console.log('RESPONSE^____________' + resp)\r",
+									"//         })\r",
+									"//     })\r",
+									"// }\r",
+									"\r",
+									"// gameChecking()"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "8fc61cc7-8638-41b7-b0a2-f0bfae6669d0",
+								"exec": [
+									"pm.collectionVariables.set('cellMod1', pm.collectionVariables.get('cell') + 11)\r",
+									"// postman.setNextRequest(\"MAKE STEP\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRF-Token",
+								"type": "text",
+								"value": "{{token1}}"
+							},
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "{{cookie1}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cell\": {\r\n        \"id\": {{cellMod1}},\r\n        \"game_id\": {{gameNumber}}\r\n        // \"x\": 7,\r\n        // \"y\": 4,\r\n        // \"kind\": null,\r\n        // \"created_at\": \"2020-11-05T10:12:46.923Z\",\r\n        // \"updated_at\": \"2020-11-05T10:12:46.923Z\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/games/{{gameNumber}}/make_step",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"games",
+								"{{gameNumber}}",
+								"make_step"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MAKE STEP 2 USER1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "22d068b8-21a6-4456-bff2-bd9799ce41be",
+								"exec": [
+									"// const jsonData = JSON.parse(responseBody)\r",
+									"\r",
+									"pm.test(\"Response is 204\", function () {\r",
+									"    console.log('STATUS IS______ ' + pm.response.code)\r",
+									"    pm.expect(pm.response.code).to.eql(204);\r",
+									"});\r",
+									"\r",
+									"// const reqBody = {\r",
+									"//     \"cell\": {\r",
+									"//         // \"id\": pm.collectionVariables.get(cellMod1),\r",
+									"//         \"id\": 14435,\r",
+									"//         \"game_id\": pm.collectionVariables.get('gameNumber')\r",
+									"\r",
+									"//     }\r",
+									"// }\r",
+									"\r",
+									"\r",
+									"\r",
+									"// const gameUrl = function () { return pm.collectionVariables.get('host') + '/games/' + pm.collectionVariables.get('gameNumber') + '/make_step'; }\r",
+									"\r",
+									"// console.log(gameUrl())\r",
+									"\r",
+									"// const gameRequest = {\r",
+									"//     url: gameUrl(),\r",
+									"//     method: 'POST',\r",
+									"//     header: { \r",
+									"//         'X-CSRF-Token': pm.collectionVariables.get('token1'),\r",
+									"//      },\r",
+									"//      body: reqBody\r",
+									"// }\r",
+									"\r",
+									"// const gameChecking = () => {\r",
+									"//     pm.test(\"GAME CHECKING\", function () {\r",
+									"//         pm.sendRequest(gameRequest, function (err, resp) {\r",
+									"//             console.log(resp.body)\r",
+									"//             // pm.expect(jsonData.id).to.eql('97');\r",
+									"//             pm.expect(resp).to.have.property('code', 200);\r",
+									"//             // pm.expect(resp).to.have.property('status', 'OK');\r",
+									"//             console.log('RESPONSE^____________' + resp)\r",
+									"//         })\r",
+									"//     })\r",
+									"// }\r",
+									"\r",
+									"// gameChecking()"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "bc9e81ee-8134-43a1-bf9b-4b3dd09cfbac",
+								"exec": [
+									"pm.collectionVariables.set('cellMod1', pm.collectionVariables.get('cell') + 12)\r",
+									"// postman.setNextRequest(\"MAKE STEP\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRF-Token",
+								"type": "text",
+								"value": "{{token1}}"
+							},
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "{{cookie1}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cell\": {\r\n        \"id\": {{cellMod1}},\r\n        \"game_id\": {{gameNumber}}\r\n        // \"x\": 7,\r\n        // \"y\": 4,\r\n        // \"kind\": null,\r\n        // \"created_at\": \"2020-11-05T10:12:46.923Z\",\r\n        // \"updated_at\": \"2020-11-05T10:12:46.923Z\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/games/{{gameNumber}}/make_step",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"games",
+								"{{gameNumber}}",
+								"make_step"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MAKE STEP 3 USER1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "eae2c9ad-e367-4873-b3b8-f3525e3499e4",
+								"exec": [
+									"// const jsonData = JSON.parse(responseBody)\r",
+									"\r",
+									"pm.test(\"Response is 204\", function () {\r",
+									"    console.log('STATUS IS______ ' + pm.response.code)\r",
+									"    pm.expect(pm.response.code).to.eql(204);\r",
+									"});\r",
+									"\r",
+									"// const reqBody = {\r",
+									"//     \"cell\": {\r",
+									"//         // \"id\": pm.collectionVariables.get(cellMod1),\r",
+									"//         \"id\": 14435,\r",
+									"//         \"game_id\": pm.collectionVariables.get('gameNumber')\r",
+									"\r",
+									"//     }\r",
+									"// }\r",
+									"\r",
+									"\r",
+									"\r",
+									"// const gameUrl = function () { return pm.collectionVariables.get('host') + '/games/' + pm.collectionVariables.get('gameNumber') + '/make_step'; }\r",
+									"\r",
+									"// console.log(gameUrl())\r",
+									"\r",
+									"// const gameRequest = {\r",
+									"//     url: gameUrl(),\r",
+									"//     method: 'POST',\r",
+									"//     header: { \r",
+									"//         'X-CSRF-Token': pm.collectionVariables.get('token1'),\r",
+									"//      },\r",
+									"//      body: reqBody\r",
+									"// }\r",
+									"\r",
+									"// const gameChecking = () => {\r",
+									"//     pm.test(\"GAME CHECKING\", function () {\r",
+									"//         pm.sendRequest(gameRequest, function (err, resp) {\r",
+									"//             console.log(resp.body)\r",
+									"//             // pm.expect(jsonData.id).to.eql('97');\r",
+									"//             pm.expect(resp).to.have.property('code', 200);\r",
+									"//             // pm.expect(resp).to.have.property('status', 'OK');\r",
+									"//             console.log('RESPONSE^____________' + resp)\r",
+									"//         })\r",
+									"//     })\r",
+									"// }\r",
+									"\r",
+									"// gameChecking()"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "22221890-12b3-4698-a666-0564946c019b",
+								"exec": [
+									"pm.collectionVariables.set('cellMod1', pm.collectionVariables.get('cell') + 13)\r",
+									"// postman.setNextRequest(\"MAKE STEP\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRF-Token",
+								"type": "text",
+								"value": "{{token1}}"
+							},
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "{{cookie1}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cell\": {\r\n        \"id\": {{cellMod1}},\r\n        \"game_id\": {{gameNumber}}\r\n        // \"x\": 7,\r\n        // \"y\": 4,\r\n        // \"kind\": null,\r\n        // \"created_at\": \"2020-11-05T10:12:46.923Z\",\r\n        // \"updated_at\": \"2020-11-05T10:12:46.923Z\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/games/{{gameNumber}}/make_step",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"games",
+								"{{gameNumber}}",
+								"make_step"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MAKE STEP 4 USER1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "195e7c72-38eb-4cfc-8770-79203fb47bde",
+								"exec": [
+									"// const jsonData = JSON.parse(responseBody)\r",
+									"\r",
+									"pm.test(\"Response is 204\", function () {\r",
+									"    console.log('STATUS IS______ ' + pm.response.code)\r",
+									"    pm.expect(pm.response.code).to.eql(204);\r",
+									"});\r",
+									"\r",
+									"// const reqBody = {\r",
+									"//     \"cell\": {\r",
+									"//         // \"id\": pm.collectionVariables.get(cellMod1),\r",
+									"//         \"id\": 14435,\r",
+									"//         \"game_id\": pm.collectionVariables.get('gameNumber')\r",
+									"\r",
+									"//     }\r",
+									"// }\r",
+									"\r",
+									"\r",
+									"\r",
+									"// const gameUrl = function () { return pm.collectionVariables.get('host') + '/games/' + pm.collectionVariables.get('gameNumber') + '/make_step'; }\r",
+									"\r",
+									"// console.log(gameUrl())\r",
+									"\r",
+									"// const gameRequest = {\r",
+									"//     url: gameUrl(),\r",
+									"//     method: 'POST',\r",
+									"//     header: { \r",
+									"//         'X-CSRF-Token': pm.collectionVariables.get('token1'),\r",
+									"//      },\r",
+									"//      body: reqBody\r",
+									"// }\r",
+									"\r",
+									"// const gameChecking = () => {\r",
+									"//     pm.test(\"GAME CHECKING\", function () {\r",
+									"//         pm.sendRequest(gameRequest, function (err, resp) {\r",
+									"//             console.log(resp.body)\r",
+									"//             // pm.expect(jsonData.id).to.eql('97');\r",
+									"//             pm.expect(resp).to.have.property('code', 200);\r",
+									"//             // pm.expect(resp).to.have.property('status', 'OK');\r",
+									"//             console.log('RESPONSE^____________' + resp)\r",
+									"//         })\r",
+									"//     })\r",
+									"// }\r",
+									"\r",
+									"// gameChecking()"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "26988070-97f0-41b8-b0d3-bfdb9bb3ddbc",
+								"exec": [
+									"pm.collectionVariables.set('cellMod1', pm.collectionVariables.get('cell') + 14)\r",
+									"// postman.setNextRequest(\"MAKE STEP\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRF-Token",
+								"type": "text",
+								"value": "{{token1}}"
+							},
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "{{cookie1}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cell\": {\r\n        \"id\": {{cellMod1}},\r\n        \"game_id\": {{gameNumber}}\r\n        // \"x\": 7,\r\n        // \"y\": 4,\r\n        // \"kind\": null,\r\n        // \"created_at\": \"2020-11-05T10:12:46.923Z\",\r\n        // \"updated_at\": \"2020-11-05T10:12:46.923Z\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/games/{{gameNumber}}/make_step",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"games",
+								"{{gameNumber}}",
+								"make_step"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MAKE STEP 5 USER1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "ebdcfe6d-b928-4840-84de-891e1670a76a",
+								"exec": [
+									"// const jsonData = JSON.parse(responseBody)\r",
+									"\r",
+									"pm.test(\"Response is 204\", function () {\r",
+									"    console.log('STATUS IS______ ' + pm.response.code)\r",
+									"    pm.expect(pm.response.code).to.eql(204);\r",
+									"});\r",
+									"\r",
+									"// const reqBody = {\r",
+									"//     \"cell\": {\r",
+									"//         // \"id\": pm.collectionVariables.get(cellMod1),\r",
+									"//         \"id\": 14435,\r",
+									"//         \"game_id\": pm.collectionVariables.get('gameNumber')\r",
+									"\r",
+									"//     }\r",
+									"// }\r",
+									"\r",
+									"\r",
+									"\r",
+									"// const gameUrl = function () { return pm.collectionVariables.get('host') + '/games/' + pm.collectionVariables.get('gameNumber') + '/make_step'; }\r",
+									"\r",
+									"// console.log(gameUrl())\r",
+									"\r",
+									"// const gameRequest = {\r",
+									"//     url: gameUrl(),\r",
+									"//     method: 'POST',\r",
+									"//     header: { \r",
+									"//         'X-CSRF-Token': pm.collectionVariables.get('token1'),\r",
+									"//      },\r",
+									"//      body: reqBody\r",
+									"// }\r",
+									"\r",
+									"// const gameChecking = () => {\r",
+									"//     pm.test(\"GAME CHECKING\", function () {\r",
+									"//         pm.sendRequest(gameRequest, function (err, resp) {\r",
+									"//             console.log(resp.body)\r",
+									"//             // pm.expect(jsonData.id).to.eql('97');\r",
+									"//             pm.expect(resp).to.have.property('code', 200);\r",
+									"//             // pm.expect(resp).to.have.property('status', 'OK');\r",
+									"//             console.log('RESPONSE^____________' + resp)\r",
+									"//         })\r",
+									"//     })\r",
+									"// }\r",
+									"\r",
+									"// gameChecking()"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "a06fe0ac-bc05-4390-a18e-3e084972084d",
+								"exec": [
+									"pm.collectionVariables.set('cellMod1', pm.collectionVariables.get('cell') + 15)\r",
+									"// postman.setNextRequest(\"MAKE STEP\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRF-Token",
+								"type": "text",
+								"value": "{{token1}}"
+							},
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "{{cookie1}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cell\": {\r\n        \"id\": {{cellMod1}},\r\n        \"game_id\": {{gameNumber}}\r\n        // \"x\": 7,\r\n        // \"y\": 4,\r\n        // \"kind\": null,\r\n        // \"created_at\": \"2020-11-05T10:12:46.923Z\",\r\n        // \"updated_at\": \"2020-11-05T10:12:46.923Z\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/games/{{gameNumber}}/make_step",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"games",
+								"{{gameNumber}}",
+								"make_step"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MAKE STEP USER2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f9db513e-b19d-44c1-8e7c-1d128a515cb3",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "ef4b20d6-67e7-4827-b13c-327a2997d9bb",
+								"exec": [
+									"pm.collectionVariables.set('cellMod2', pm.collectionVariables.get('cell') + 33)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRF-Token",
+								"type": "text",
+								"value": "{{token2}}"
+							},
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "{{cookie2}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cell\": {\r\n        \"id\": {{cellMod2}},\r\n        \"game_id\": {{gameNumber}}\r\n        // \"x\": 7,\r\n        // \"y\": 4,\r\n        // \"kind\": null,\r\n        // \"created_at\": \"2020-11-05T10:12:46.923Z\",\r\n        // \"updated_at\": \"2020-11-05T10:12:46.923Z\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/games/{{gameNumber}}/make_step",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"games",
+								"{{gameNumber}}",
+								"make_step"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHECKING FINISH GAME",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "ead902c1-dcb2-428c-8ba3-cea98172aa58",
+								"exec": [
+									"const jsonData = JSON.parse(responseBody)\r",
+									"\r",
+									"pm.test(\"Response code is 200\", function () {\r",
+									"    pm.expect(pm.response.code).to.eql(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"GAME LOADED\", function () {\r",
+									"    pm.expect(jsonData.id).to.eql(pm.collectionVariables.get('gameNumber'));\r",
+									"});\r",
+									"// console.log()\r",
+									"pm.test(\"WINNER X\", function () {\r",
+									"    pm.expect(jsonData.winner.kind).to.eql('x');\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "65f3d27d-877c-4ee5-a9d3-d4b19ccf21fe",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-CSRF-Token",
+								"type": "text",
+								"value": "{{token1}}"
+							},
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "{{cookie1}}"
+							},
+							{
+								"key": "withCredentials",
+								"type": "text",
+								"value": "true",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{host}}/games/{{gameNumber}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"games",
+								"{{gameNumber}}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "b6e59106-0a2d-4056-9e6f-510543cb13e6",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "ee6a62c7-205d-4d8f-9404-043f6b4ea074",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "e0c2d8ae-b5ee-4539-be34-f9b44ed6d486",
+			"key": "token",
+			"value": "q5t3UROAqGm4WbiwRvac0CGkufQFAoAGrfGDXd1BFBLo/DTyu6vkEJBhVwD0prTV3plF5NJSwVZEFWlSibpewg=="
+		},
+		{
+			"id": "319e6891-50c8-43ce-9e3b-73a3f3b06fc7",
+			"key": "user1",
+			"value": "test_user11604922824@gmail.com"
+		},
+		{
+			"id": "f0904456-d6a6-45e1-9907-9ddfc0fd13d2",
+			"key": "user2",
+			"value": "admin333333@mot.home"
+		},
+		{
+			"id": "4db4a5e6-5990-40fb-a39c-edf84dffb6ec",
+			"key": "host",
+			"value": "https://xoxotsf.herokuapp.com/"
+		},
+		{
+			"id": "a1172a9a-f2cf-4d05-bc0e-fe694f34150d",
+			"key": "token1",
+			"value": "66PKGfovhwbdanUSNNp2ieI1jyGBgKJhriGEzmJaWuGKuSA51JIF5QMaHWmQkPdUKUg77l6v7t3FFVLFXQHAVg=="
+		},
+		{
+			"id": "27207154-81be-4012-8b4d-0ffa12791b0f",
+			"key": "gameNumber",
+			"value": 150
+		},
+		{
+			"id": "7cf271ee-da1c-44ec-b795-c2ee4f212e93",
+			"key": "token2",
+			"value": "cgaV2pUKiP2HFWjEpsp0uLS6pM4w9dZx1ikZJM+iMHYTHH/6u7cKHlllAL8CgPVlf8cQAe/ams29Hc8v8PmqwQ=="
+		},
+		{
+			"id": "bf32cb20-8540-4e29-a09a-dc2925507111",
+			"key": "cell",
+			"value": 14901
+		},
+		{
+			"id": "17a89e2d-cf10-427a-85a5-57805a5eac0f",
+			"key": "cellMod1",
+			"value": 14916
+		},
+		{
+			"id": "f07d6276-5639-42b9-8441-6db314cbae7b",
+			"key": "cellMod2",
+			"value": 14934
+		},
+		{
+			"id": "7331eef5-a7d8-4003-b8cb-7d259a5e73f4",
+			"key": "cookie2",
+			"value": "_nerve_ai_session=ADv%2BrT6KBB0C050uA3pYA3wOTinf4WOCMMNkuyB5lMHsUjHYwk4C56B3%2FXMy8LbGuz6ESZ5Gk31DVEVMqz39T9oqxErCVcTUons7Oa33aEgU5xGPpr%2FZF9Vx3nP8CFRPhEAsV9SL88btm%2FyFxcQsofRQsvZP6ri1OI7TR6YRxqfQGfUbAxqL%2BvZsIDC7ijylxNfpccP8wfY9loxk4imZP205LiDQKX4k8G1mN2%2Fu0YlJwZONlwz2WpRGBX%2BYVsfgYnyNJkC0bnKU06GxyufdbJ2%2BU1begVQl%2FzaxzmdX0nW3iS5jx8rQ%2BYtobum2TyK1yBoZiIbJbw%2Bj9O859E9asz5uM36XxJ7DOnqPKQdlRoZIO%2F8xhCNxhsExNZR5Gl1aTxGzb6DjWbNW2As3tUo6VwE7QPR%2FKqtjZO6kK4KoOmNROmwnIfgNYmoctmDImhkpUQA5kDdIr8DkYo2IM7eeTiQG01PIZzd9De6HB1HWy%2BDyAXwIrQMb0nto3pLTY2hfj%2B1j63bOTF2h6aPAW%2BhVW0ulX8XojxkEYLMu%2FlPj%2FKCBYypM5w%3D%3D--GRNW4DOLswkdI5ws--kPs1EkRRceMSKylOD1HUgg%3D%3D; path=/; HttpOnly"
+		},
+		{
+			"id": "ac115767-9e50-48fc-8a28-b56e55536d66",
+			"key": "cookie1",
+			"value": "_nerve_ai_session=6UNKLJKMX4ehbL4%2BMhfwLBww22fbFGAt5PhH3TTmZzy5%2BzB93IeEHY4bJw%2FHNwyrjeNOkYS99NtVjudC9J9ZjoULLaaIh66u9fJtDwQVDAzqT6xQO2em4SRGT1GRSZAfCTd7gMKPoUMM9eINGCHP8Df1TRW8fVFc250uWms%2Fo7S1rKvb%2BYqiQYfAZCvGnCbHFIrB5cih2sXy4vn5qds0Ypd2NytxE6SNcHJkyvdciA0IDW0BvJpS%2FKGolrrASDx1vXSy0FX1%2Fy3b4sMZ2vZp1yNXRNT1QeGgmVVrKkzIki1MFIcohO%2BGCtRJREUbE9HirOCqlEmCxAnI3bTW90tLWvOMo6mVaaD9OOvRV%2ByCNd4xBioyQ8QongRI3fo3s32e7c%2BohzMqonlkKSP5bIhZEgT4LQo6Uwdz79uJGxe98cB51cywfeTu5jdvJAXMULgtc7p%2B163zjBmh3rMaJlKS9WYPBnl9rwO0n%2BsqbPPUZs3c9LLGPHmDd8YHhrD6T3vllQvjxLbTPHpztAHvESOmMls5loEErUkasX%2FjJZ0aMNh1wRsASQ%3D%3D--W47ljHifCyPraerA--4LA7eN7ZPbdgO3h%2FDBFDRA%3D%3D; path=/; HttpOnly"
+		},
+		{
+			"id": "9c32435c-6908-427c-8ef0-47a2c26d90a4",
+			"key": "winner_id",
+			"value": 39
+		}
+	],
+	"protocolProfileBehavior": {}
+}
