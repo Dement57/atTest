@@ -1,7 +1,7 @@
 {
-	"info":  {
+	"info": {
 		"_postman_id": "73f61194-778b-4cfa-91e4-94e5509d1659",
-		"name": "X-RAY",
+		"name": "AtTest",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -1574,67 +1574,67 @@
 	],
 	"variable": [
 		{
-			"id": "e0c2d8ae-b5ee-4539-be34-f9b44ed6d486",
+			"id": "da19296e-5fe9-4ba9-9f13-16d75658e8fe",
 			"key": "token",
 			"value": "q5t3UROAqGm4WbiwRvac0CGkufQFAoAGrfGDXd1BFBLo/DTyu6vkEJBhVwD0prTV3plF5NJSwVZEFWlSibpewg=="
 		},
 		{
-			"id": "319e6891-50c8-43ce-9e3b-73a3f3b06fc7",
+			"id": "79d72953-33bb-4897-b828-22a8ff4b9265",
 			"key": "user1",
 			"value": "test_user11604922824@gmail.com"
 		},
 		{
-			"id": "f0904456-d6a6-45e1-9907-9ddfc0fd13d2",
+			"id": "e3266cf8-0948-4860-bb38-d5ad2a6dd36a",
 			"key": "user2",
 			"value": "admin333333@mot.home"
 		},
 		{
-			"id": "4db4a5e6-5990-40fb-a39c-edf84dffb6ec",
+			"id": "f041fe42-7eac-4551-9c41-c083f1a3e047",
 			"key": "host",
 			"value": "https://xoxotsf.herokuapp.com/"
 		},
 		{
-			"id": "a1172a9a-f2cf-4d05-bc0e-fe694f34150d",
+			"id": "248436d0-8254-447b-a02f-1fed6ccc030f",
 			"key": "token1",
 			"value": "66PKGfovhwbdanUSNNp2ieI1jyGBgKJhriGEzmJaWuGKuSA51JIF5QMaHWmQkPdUKUg77l6v7t3FFVLFXQHAVg=="
 		},
 		{
-			"id": "27207154-81be-4012-8b4d-0ffa12791b0f",
+			"id": "489319a2-155b-4e4c-882a-4f1c8dbd1c4f",
 			"key": "gameNumber",
 			"value": 150
 		},
 		{
-			"id": "7cf271ee-da1c-44ec-b795-c2ee4f212e93",
+			"id": "9389937a-5f5f-4be6-a89f-7de463f7aef8",
 			"key": "token2",
 			"value": "cgaV2pUKiP2HFWjEpsp0uLS6pM4w9dZx1ikZJM+iMHYTHH/6u7cKHlllAL8CgPVlf8cQAe/ams29Hc8v8PmqwQ=="
 		},
 		{
-			"id": "bf32cb20-8540-4e29-a09a-dc2925507111",
+			"id": "de9024dc-f717-49ce-be6f-ac43dab4ff64",
 			"key": "cell",
 			"value": 14901
 		},
 		{
-			"id": "17a89e2d-cf10-427a-85a5-57805a5eac0f",
+			"id": "925adaa7-5a4f-4807-b6cc-ef15383110aa",
 			"key": "cellMod1",
 			"value": 14916
 		},
 		{
-			"id": "f07d6276-5639-42b9-8441-6db314cbae7b",
+			"id": "14731a70-02f5-482e-b0bb-25684cbf1876",
 			"key": "cellMod2",
 			"value": 14934
 		},
 		{
-			"id": "7331eef5-a7d8-4003-b8cb-7d259a5e73f4",
+			"id": "62ab24b8-47f0-49b3-8e87-5410037256e9",
 			"key": "cookie2",
 			"value": "_nerve_ai_session=ADv%2BrT6KBB0C050uA3pYA3wOTinf4WOCMMNkuyB5lMHsUjHYwk4C56B3%2FXMy8LbGuz6ESZ5Gk31DVEVMqz39T9oqxErCVcTUons7Oa33aEgU5xGPpr%2FZF9Vx3nP8CFRPhEAsV9SL88btm%2FyFxcQsofRQsvZP6ri1OI7TR6YRxqfQGfUbAxqL%2BvZsIDC7ijylxNfpccP8wfY9loxk4imZP205LiDQKX4k8G1mN2%2Fu0YlJwZONlwz2WpRGBX%2BYVsfgYnyNJkC0bnKU06GxyufdbJ2%2BU1begVQl%2FzaxzmdX0nW3iS5jx8rQ%2BYtobum2TyK1yBoZiIbJbw%2Bj9O859E9asz5uM36XxJ7DOnqPKQdlRoZIO%2F8xhCNxhsExNZR5Gl1aTxGzb6DjWbNW2As3tUo6VwE7QPR%2FKqtjZO6kK4KoOmNROmwnIfgNYmoctmDImhkpUQA5kDdIr8DkYo2IM7eeTiQG01PIZzd9De6HB1HWy%2BDyAXwIrQMb0nto3pLTY2hfj%2B1j63bOTF2h6aPAW%2BhVW0ulX8XojxkEYLMu%2FlPj%2FKCBYypM5w%3D%3D--GRNW4DOLswkdI5ws--kPs1EkRRceMSKylOD1HUgg%3D%3D; path=/; HttpOnly"
 		},
 		{
-			"id": "ac115767-9e50-48fc-8a28-b56e55536d66",
+			"id": "41e91d02-1628-4421-96bb-5acc36576559",
 			"key": "cookie1",
 			"value": "_nerve_ai_session=6UNKLJKMX4ehbL4%2BMhfwLBww22fbFGAt5PhH3TTmZzy5%2BzB93IeEHY4bJw%2FHNwyrjeNOkYS99NtVjudC9J9ZjoULLaaIh66u9fJtDwQVDAzqT6xQO2em4SRGT1GRSZAfCTd7gMKPoUMM9eINGCHP8Df1TRW8fVFc250uWms%2Fo7S1rKvb%2BYqiQYfAZCvGnCbHFIrB5cih2sXy4vn5qds0Ypd2NytxE6SNcHJkyvdciA0IDW0BvJpS%2FKGolrrASDx1vXSy0FX1%2Fy3b4sMZ2vZp1yNXRNT1QeGgmVVrKkzIki1MFIcohO%2BGCtRJREUbE9HirOCqlEmCxAnI3bTW90tLWvOMo6mVaaD9OOvRV%2ByCNd4xBioyQ8QongRI3fo3s32e7c%2BohzMqonlkKSP5bIhZEgT4LQo6Uwdz79uJGxe98cB51cywfeTu5jdvJAXMULgtc7p%2B163zjBmh3rMaJlKS9WYPBnl9rwO0n%2BsqbPPUZs3c9LLGPHmDd8YHhrD6T3vllQvjxLbTPHpztAHvESOmMls5loEErUkasX%2FjJZ0aMNh1wRsASQ%3D%3D--W47ljHifCyPraerA--4LA7eN7ZPbdgO3h%2FDBFDRA%3D%3D; path=/; HttpOnly"
 		},
 		{
-			"id": "9c32435c-6908-427c-8ef0-47a2c26d90a4",
+			"id": "10545626-ef78-44d0-a6bf-75779ad8505e",
 			"key": "winner_id",
 			"value": 39
 		}
